@@ -8,3 +8,9 @@ there will be some personal projects and also some follow along coding course th
 In the portifolio I will be detailing each project I made, technologies I used, links.
 
 Have fun!
+
+### React/js
+I am coding my portifolio in React as frontend. 
+
+### SASS
+Using SASS for the styles of my portifolio. 
