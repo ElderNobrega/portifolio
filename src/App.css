@@ -1,1 +1,10 @@
+body {
+  font-family: Comfortaa, sans-serif;
+  padding: 20px 40px;
+  background-color: black;
+  color: beige;
+}
 
+* {
+  box-sizing: border-box;
+}

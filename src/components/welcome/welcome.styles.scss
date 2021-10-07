@@ -1,0 +1,85 @@
+@keyframes change-color {
+  from {color: #03dac5 }
+  to {color: rgb(150, 65, 255)};
+}
+
+@keyframes leftmove {
+  from {font-size: 40px; right: 0px; color: transparent}
+  to {font-size: 20px; right: 280px; color : #03dac5}
+}
+
+@keyframes rightmove {
+  from {font-size: 40px; left: 0px; color: transparent}
+  to {font-size: 20px; left: 270px; color : #03dac5}
+}
+
+.welcome-box {
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  height: 100px;
+  padding: 15px 5px;
+  margin-top: 60px;
+  
+  .name-container {
+    width: 300px;
+    margin-left: 370px;
+    
+    .name {
+      font-size: 25px;
+      font-weight: bold;
+      transition: transform 4s;
+      animation: change-color 4s infinite alternate;
+    }
+  }
+
+
+  .welcome-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+    color: transparent;
+
+    .welcome {
+      position: relative;
+      animation: rightmove 4s;
+      animation-timing-function: ease-in;
+      animation-delay: 1s;
+      animation-fill-mode: forwards;
+    }
+
+    .portifolio {
+      position: relative;
+      animation-name: leftmove;
+      animation-duration: 6s;
+      animation-timing-function: ease-in;
+      animation-delay: 2s;
+      animation-fill-mode: forwards;
+    }
+  }
+
+}
+
+
+// .welcome {
+//   width: 400px;
+//   height: 70px;
+//   margin-top: 70px;
+//   font-family: 'Kaushan Script';
+//   font-size: 25px;
+//   color: rgb(150, 65, 255);
+//   padding: 15px;
+//   animation-name: change-color;
+//   animation-duration: 4s;
+//   animation-iteration-count: infinite;
+//   animation-direction: alternate;
+  
+//   .name {
+//     color: #03dac5;
+//     animation-name: change-color2;
+//     animation-duration: 4s;
+//     animation-iteration-count: infinite;
+//     animation-direction: alternate;
+//   }
+// }
