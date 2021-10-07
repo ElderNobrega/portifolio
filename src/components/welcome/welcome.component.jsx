@@ -13,6 +13,13 @@ const Welcome = () => {
         <span className='welcome'>Welcome to</span>
         <span className='portifolio'>Portifolio</span>
       </div>
+      <div className='content'>
+        <div className='img-container'>image</div>
+        <div className='description-container'>
+          <span className='title'>About me</span>
+          <span className='discription'>discription</span>
+        </div>
+      </div>
     </div>
   )
 }
