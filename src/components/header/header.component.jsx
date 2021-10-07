@@ -3,7 +3,9 @@ import './header.styles.scss'
 const Header = () => {
   return (
     <div className='header'>
-      {/* Just using a mark up for for the header.. It will be replaced with links later one! */}
+      {/* Just using a mark up for for the header.. It will be replaced with links later one! 
+          Still think on how I will organize and structure my portifolio.
+      */}
       <div className='logo-container'>
         <div className='logo'>Logo</div>
         <div className='logo'>Resume</div>
