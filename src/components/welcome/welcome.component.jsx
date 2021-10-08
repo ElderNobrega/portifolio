@@ -17,7 +17,7 @@ const Welcome = () => {
         <div className='img-container'>image</div>
         <div className='description-container'>
           <span className='title'>About me</span>
-          <span className='discription'>discription</span>
+          <span className='description'>discription</span>
         </div>
       </div>
     </div>
