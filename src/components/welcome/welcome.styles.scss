@@ -4,94 +4,99 @@
 }
 
 @keyframes leftmove {
-  from {font-size: 40px; right: 0px; color: transparent}
-  to {font-size: 20px; right: 280px; color : #03dac5}
+  from {font-size: 60px; right: 0%; color: transparent}
+  to {font-size: 30px; right: 31%; color : #03dac5}
 }
 
 @keyframes rightmove {
-  from {font-size: 40px; left: 0px; color: transparent}
-  to {font-size: 20px; left: 270px; color : #03dac5}
+  from {font-size: 60px; left: 0%; color: transparent}
+  to {font-size: 30px; left: 28%; color : #03dac5}
 }
 
 .welcome-box {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  width: 900px;
-  height: 100px;
-  padding: 15px 5px;
-  margin-top: 60px;
-  
-  .name-container {
+  align-items: center;
+
+  .intro-block {
     width: 100%;
-    margin-left: 370px;
-    
-    .name {
-      font-size: 25px;
-      font-weight: bold;
-      transition: transform 4s;
-      animation: change-color 4s infinite alternate;
-    }
-  }
-
-
-  .welcome-container {
-    height: 20px;
-    margin-top: 5px;
+    min-height: 130px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-size: 20px;
-    color: transparent;
+    flex-direction: column;
+    align-items: center;
 
-    .welcome {
-      position: relative;
-      animation: rightmove 4s;
-      animation-timing-function: ease-in;
-      animation-delay: 1s;
-      animation-fill-mode: forwards;
+    .name-container {
+      .name {
+        font-size: 40px;
+        font-weight: bold;
+        transition: transform 4s;
+        animation: change-color 4s infinite alternate;
+      }
     }
 
-    .portifolio {
-      position: relative;
-      animation-name: leftmove;
-      animation-duration: 6s;
-      animation-timing-function: ease-in;
-      animation-delay: 2s;
-      animation-fill-mode: forwards;
+    .welcome-container {
+      width: 100%;
+      min-height: 50px;
+      padding: 5px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 20px;
+      color: transparent;
+
+      .welcome {
+        position: relative;
+        animation: rightmove 7s;
+        animation-timing-function: ease-in;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+      }
+
+      .portifolio {
+        position: relative;
+        animation-name: leftmove;
+        animation-duration: 6s;
+        animation-timing-function: ease-in;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+      }
     }
   }
 
   .content {
-    margin-top: 60px;
+    width: 80%;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
 
     .img-container {
-      border: 1px solid #03dac5;
-      width: 245px;
+      width: 30%;
       height: 300px;
-      margin-left: 140px;
-      padding: 15px;
-      margin-top: 20px;
+      border: 1px solid #03dac5;
     }
 
     .description-container {
+      width: 50%;
+      height: 300px ;
       border: 1px solid #03dac5;
-      width: 368px;
-      height: 300px;
-      padding: 10px;
-      margin-top: 20px;
       display: flex;
       flex-direction: column;
       align-items: center;
 
-      .title {
-        width: 100%;
-        height: 24px;
-        padding-left: 129px;
+      .title-container {
+        width: 80%;
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         border-bottom: 1px solid #03dac5;
+
+        .title {
+          margin: 10px;
+          font-weight: bold;
+        }
       }
 
       .description {
@@ -99,28 +104,4 @@
       }
     }
   }
-
 }
-
-
-// .welcome {
-//   width: 400px;
-//   height: 70px;
-//   margin-top: 70px;
-//   font-family: 'Kaushan Script';
-//   font-size: 25px;
-//   color: rgb(150, 65, 255);
-//   padding: 15px;
-//   animation-name: change-color;
-//   animation-duration: 4s;
-//   animation-iteration-count: infinite;
-//   animation-direction: alternate;
-  
-//   .name {
-//     color: #03dac5;
-//     animation-name: change-color2;
-//     animation-duration: 4s;
-//     animation-iteration-count: infinite;
-//     animation-direction: alternate;
-//   }
-// }
