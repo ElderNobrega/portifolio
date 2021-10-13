@@ -4,6 +4,7 @@ const data = [
     projectName: 'name',
     projectUrl: 'someUrl',
     gitUrl: 'anyUrl',
+    liveUrl: 'url',
     description: 'some description here'
   },
   {
@@ -11,6 +12,7 @@ const data = [
     projectName: 'name',
     projectUrl: 'someUrl',
     gitUrl: 'anyUrl',
+    liveUrl: 'url',
     description: 'some description here'
   },
   {
@@ -18,6 +20,7 @@ const data = [
     projectName: 'name',
     projectUrl: 'someUrl',
     gitUrl: 'anyUrl',
+    liveUrl: 'url',
     description: 'some description here'
   },
   {
@@ -25,6 +28,7 @@ const data = [
     projectName: 'name',
     projectUrl: 'someUrl',
     gitUrl: 'anyUrl',
+    liveUrl: 'url',
     description: 'some description here'
   }
 ]

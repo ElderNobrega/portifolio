@@ -39,7 +39,9 @@ const Welcome = ({onBtnClicked}) => {
           </p>
         </div>
       </div>
-      {isBtnClicked ? null : <CustomButton type='button' onClick={onClickHandler}>Get Started</CustomButton>}
+      <div className='btn-project'>
+        {isBtnClicked ? null : <CustomButton type='button' onClick={onClickHandler}>Get Started</CustomButton>}
+      </div>
     </div>
   )
 }
