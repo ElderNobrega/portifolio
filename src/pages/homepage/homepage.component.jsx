@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState} from "react";
 
 import Welcome from '../../components/welcome/welcome.component'
 import ProjectOverview from "../../components/project-overview/project-overview.component";
@@ -6,10 +6,17 @@ import ProjectOverview from "../../components/project-overview/project-overview.
 import './homepage.styles.scss'
 
 const HomePage = () => {
+
+  const [isProjectLoaded, setIsProjectLoaded] = useState(false)
+
+  const onClickHandler = () => {
+    setIsProjectLoaded(true)
+  }
+
   return (
     <div className='homepage'>
-      <Welcome/>
-      {/* <ProjectOverview/> */}
+      <Welcome onBtnClicked={onClickHandler}/>
+      {isProjectLoaded ? <ProjectOverview/> : null}
     </div>
   )
 }

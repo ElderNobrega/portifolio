@@ -1,6 +1,18 @@
+import { useState } from 'react'
+
+import CustomButton from '../custom-button/custom-button.component'
+
 import './welcome.styles.scss'
 
-const Welcome = () => {
+const Welcome = ({onBtnClicked}) => {
+
+  const [isBtnClicked, setIsBtnClicked] = useState(false)
+
+  const onClickHandler = () => {
+    setIsBtnClicked(true)
+    onBtnClicked()
+  }
+
   return (
     <div className='welcome-box'>
       <div className='intro-block'>
@@ -18,14 +30,16 @@ const Welcome = () => {
           <div className='title-container'>
             <span className='title'>About me</span>
           </div>
-          <span className='description'>
+          <p className='description'>
             &emsp; Hello there, that is a pleasure having you here. 
-            My name is Elder Guerra, from a Pilot correr, to a Jr Software Developer.
+            My name is Elder Guerra, from a successful Pilot correr, to a passionate Jr Software Developer.
             <br/>
-            I will be detailing some of my previous works and technologies used in each projects.
-          </span>
+            &emsp; I will be detailing some of my previous works and technologies used in each projects, 
+            As well as links to git repository, a brief description and live demonstrations (if apply).
+          </p>
         </div>
       </div>
+      {isBtnClicked ? null : <CustomButton type='button' onClick={onClickHandler}>Get Started</CustomButton>}
     </div>
   )
 }
