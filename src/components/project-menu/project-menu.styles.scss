@@ -1,5 +1,6 @@
 .project-menu {
   min-width: 40%;
+  max-width: 48%;
   margin: 10px 7.5px 15px;
   height: 280px;
   flex: 1 1 auto;
@@ -42,6 +43,7 @@
     }
 
     .descr {
+      padding: 10px;
       height: 45%;
     }
 
